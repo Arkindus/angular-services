@@ -1,0 +1,24 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">{{ serverElement.name }}</div>
+  <div class="panel-body">
+    Server status set to: {{ serverElement.status }}
+    <h1></h1>
+    <p class="form-group">
+      <button
+        class="btn btn-success"
+        (click)="onChangeInStatus('Active')">
+          Active
+      </button>
+      <button
+        class="btn btn-danger"
+        (click)="onChangeInStatus('Inactive')">
+          Inactive
+      </button>
+      <button
+        class="btn btn-warning"
+        (click)="onChangeInStatus('Standby')">
+          Standby
+      </button>
+    </p>
+  </div>
+</div>

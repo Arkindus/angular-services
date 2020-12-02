@@ -1,0 +1,26 @@
+<h3>Add new server!</h3>
+<form>
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Server Name"
+    required
+    #serverName>
+  <h1></h1>
+ <div class="form-group">
+  <select
+    class="form-control"
+    #serverStatus>
+      <option value="Active">Active</option>
+      <option value="Inactive">Inactive</option>
+      <option value="Standby">Standby</option>
+  </select>
+ </div>
+  <h1></h1>
+  <button
+    class="btn btn-success"
+    type="submit"
+    (click)="onAddServer(serverName.value, serverStatus.value)">
+      Add server
+  </button>
+</form>
